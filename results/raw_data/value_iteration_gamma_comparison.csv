@@ -1,0 +1,4 @@
+gamma,theta,converged,iterations,runtime_seconds,final_delta,number_of_states,initial_state_value,initial_best_action,policy_agreement_with_gamma_0_95,model_path
+0.8,1e-08,True,84,1.270328400656581,9.131814415752615e-09,564,-5.17552029570314,DOWN,91.45907473309609,results\models\value_iteration_gamma_0_8.json
+0.9,1e-08,True,176,2.5845841001719236,9.885599894232655e-09,564,-7.203945333804977,DOWN,98.22064056939502,results\models\value_iteration_gamma_0_9.json
+0.95,1e-08,True,361,5.203355299308896,9.584123716877002e-09,564,-3.014208947262059,DOWN,100.0,results\models\value_iteration_gamma_0_95.json

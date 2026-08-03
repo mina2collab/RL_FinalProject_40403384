@@ -1,0 +1,6302 @@
+{
+  "algorithm": "Value Iteration",
+  "gamma": 0.8,
+  "theta": 1e-08,
+  "max_iterations": 10000,
+  "converged": true,
+  "iterations": 84,
+  "runtime_seconds": 1.270328400656581,
+  "number_of_states": 564,
+  "delta_history": [
+    79.4,
+    57.088000000000015,
+    40.52224000000002,
+    29.122252800000016,
+    18.14711808000001,
+    11.546848788480007,
+    8.031843568844806,
+    5.616363772051461,
+    3.940968742833361,
+    2.7936705170592795,
+    2.1517056442844256,
+    1.703294370183511,
+    1.3372950228538305,
+    1.0379516489739835,
+    0.798172400013387,
+    0.5986452393984569,
+    0.4206957036910519,
+    0.30868333411906024,
+    0.24560172519375545,
+    0.19246507670887425,
+    0.1455746356808998,
+    0.08920383417846,
+    0.069166323322575,
+    0.03946436441169965,
+    0.030798127320012192,
+    0.02319323942579743,
+    0.017808989387393837,
+    0.013843051122627514,
+    0.010592558292245258,
+    0.0083738595813454,
+    0.0065253077004596705,
+    0.005003462219750787,
+    0.0038509564261230977,
+    0.0028519005294604938,
+    0.002192623579877484,
+    0.0015024606856357536,
+    0.0011816701454296918,
+    0.0007279799509447571,
+    0.0005822429606556767,
+    0.0003515672911635903,
+    0.00026881677813417326,
+    0.00020867359722703815,
+    0.00016663426790564095,
+    0.0001328445943222789,
+    0.0001056161965635738,
+    8.390400477642501e-05,
+    6.645460957788174e-05,
+    5.259234801346935e-05,
+    4.1514833564182396e-05,
+    3.320985859378567e-05,
+    2.6519632161381423e-05,
+    2.1129770789940494e-05,
+    1.6674149535766958e-05,
+    1.2931733523124933e-05,
+    1.024444463926244e-05,
+    8.052402269420611e-06,
+    6.307195921095854e-06,
+    4.881105318155221e-06,
+    3.856167460902782e-06,
+    2.895421101101192e-06,
+    2.2892168320964856e-06,
+    1.675538752188288e-06,
+    1.3282677162607115e-06,
+    9.52803628884169e-07,
+    7.567895696780624e-07,
+    5.382227312722421e-07,
+    4.2571301506200143e-07,
+    3.246926709721265e-07,
+    2.5974812789542057e-07,
+    2.077811895873083e-07,
+    1.6622111242980964e-07,
+    1.3296597067835592e-07,
+    1.0637032410443226e-07,
+    8.508937199280808e-08,
+    6.80699310251498e-08,
+    5.445160145001182e-08,
+    4.356027982765909e-08,
+    3.4845484719880915e-08,
+    2.787574970852802e-08,
+    2.2298871193981995e-08,
+    1.7838688748383902e-08,
+    1.4269861736693201e-08,
+    1.1415628442534853e-08,
+    9.131814415752615e-09
+  ],
+  "states": [
+    {
+      "state": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "value": -5.17552029570314,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "value": -5.140614165799934,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "value": -5.408559573626456,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "value": -5.405243903074941,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "value": -4.642208862849065,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "value": -4.692596705628819,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "value": -4.971131586457787,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "value": -4.97591660164602,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "value": -4.788611626705192,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "value": -4.745805752731339,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "value": -5.030911741203264,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "value": -5.026848588206039,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        4,
+        0,
+        0
+      ],
+      "value": -5.7632076299073836,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        4,
+        0,
+        1
+      ],
+      "value": -5.786824663858627,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "value": -5.973264017601878,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "value": -5.975505757186555,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        5,
+        0,
+        0
+      ],
+      "value": -5.287517361737804,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        5,
+        0,
+        1
+      ],
+      "value": -5.115542216935499,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        5,
+        1,
+        0
+      ],
+      "value": -6.020108179192619,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "value": -6.0055745826289435,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        7,
+        0,
+        0
+      ],
+      "value": -3.1819727712359054,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        7,
+        0,
+        1
+      ],
+      "value": -3.0637235525559054,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        7,
+        1,
+        0
+      ],
+      "value": -6.606254397539476,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "value": -6.334898583113121,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        8,
+        0,
+        0
+      ],
+      "value": -1.8374543031212776,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        8,
+        0,
+        1
+      ],
+      "value": -1.8375484620911804,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        8,
+        1,
+        0
+      ],
+      "value": -6.391675431062972,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        8,
+        1,
+        1
+      ],
+      "value": -6.416024530153029,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        1,
+        9,
+        0,
+        0
+      ],
+      "value": 0.8599042424589671,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        9,
+        0,
+        1
+      ],
+      "value": 0.8600456366542569,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        9,
+        1,
+        0
+      ],
+      "value": -5.0070174840694675,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        9,
+        1,
+        1
+      ],
+      "value": -4.996222690806843,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        10,
+        0,
+        0
+      ],
+      "value": 2.7723525381002,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        10,
+        0,
+        1
+      ],
+      "value": 2.772165482843996,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        10,
+        1,
+        0
+      ],
+      "value": -4.868143643994946,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        10,
+        1,
+        1
+      ],
+      "value": -4.878965292033723,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        11,
+        0,
+        0
+      ],
+      "value": 4.551929871468683,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        11,
+        0,
+        1
+      ],
+      "value": 4.552176453030279,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        11,
+        1,
+        0
+      ],
+      "value": -5.025803940950577,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        11,
+        1,
+        1
+      ],
+      "value": -5.0177053490836,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        1,
+        12,
+        0,
+        0
+      ],
+      "value": 1.7695791115383506,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        12,
+        0,
+        1
+      ],
+      "value": 1.7693962110297208,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        12,
+        1,
+        0
+      ],
+      "value": -6.433947868327485,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        12,
+        1,
+        1
+      ],
+      "value": -6.439286922283506,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        13,
+        0,
+        0
+      ],
+      "value": -0.3390800984891598,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        13,
+        0,
+        1
+      ],
+      "value": -0.33894920033664655,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        13,
+        1,
+        0
+      ],
+      "value": -6.659750842617245,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        1,
+        13,
+        1,
+        1
+      ],
+      "value": -6.656399873775221,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "value": -4.617493486683074,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "value": -4.670099100421873,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "value": -4.9607322035439045,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "value": -4.965729270701045,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "value": -4.524165859549005,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "value": -4.455148855787838,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "value": -4.907435775718047,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "value": -4.90088154243003,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "value": -4.552144424528348,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "value": -4.609777992874678,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "value": -4.923901468564314,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        3,
+        1,
+        1
+      ],
+      "value": -4.929371800775851,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        5,
+        0,
+        0
+      ],
+      "value": -4.424194088337392,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        5,
+        0,
+        1
+      ],
+      "value": -4.711450015819155,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        5,
+        1,
+        0
+      ],
+      "value": -5.697038760758357,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        5,
+        1,
+        1
+      ],
+      "value": -5.721283987511475,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        7,
+        0,
+        0
+      ],
+      "value": -2.9149372025932134,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        7,
+        0,
+        1
+      ],
+      "value": -4.51054838291559,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        2,
+        7,
+        1,
+        0
+      ],
+      "value": -6.0860378075383466,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        7,
+        1,
+        1
+      ],
+      "value": -7.415085144891834,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        2,
+        8,
+        0,
+        0
+      ],
+      "value": 0.7388645952433774,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        8,
+        0,
+        1
+      ],
+      "value": 0.7390045877975895,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        8,
+        1,
+        0
+      ],
+      "value": -5.002491323278372,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        8,
+        1,
+        1
+      ],
+      "value": -4.760136831664744,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        9,
+        0,
+        0
+      ],
+      "value": 2.7894590287335177,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        9,
+        0,
+        1
+      ],
+      "value": 2.7892732520821593,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        9,
+        1,
+        0
+      ],
+      "value": -4.836620570001839,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        9,
+        1,
+        1
+      ],
+      "value": -4.849091091083566,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        2,
+        10,
+        0,
+        0
+      ],
+      "value": 5.217529303532449,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        10,
+        0,
+        1
+      ],
+      "value": 5.217773080403245,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        10,
+        1,
+        0
+      ],
+      "value": -4.80678059067247,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        10,
+        1,
+        1
+      ],
+      "value": -4.792233438753074,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        11,
+        0,
+        0
+      ],
+      "value": 8.107534252336475,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        11,
+        0,
+        1
+      ],
+      "value": 8.107195213117484,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        11,
+        1,
+        0
+      ],
+      "value": -4.864903168893315,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        11,
+        1,
+        1
+      ],
+      "value": -4.875537130936112,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        12,
+        0,
+        0
+      ],
+      "value": 12.682434560948913,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        12,
+        0,
+        1
+      ],
+      "value": 12.68293106534126,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        2,
+        12,
+        1,
+        0
+      ],
+      "value": -5.100707132463107,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        12,
+        1,
+        1
+      ],
+      "value": -5.093418638992219,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        13,
+        0,
+        0
+      ],
+      "value": -0.5544177916644174,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        13,
+        0,
+        1
+      ],
+      "value": -0.5547217126477206,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        2,
+        13,
+        1,
+        0
+      ],
+      "value": -7.57366463279514,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        2,
+        13,
+        1,
+        1
+      ],
+      "value": -7.576190280514134,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "value": -4.507391562064443,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        1,
+        0,
+        1
+      ],
+      "value": -4.436863551089632,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "value": -4.903570104391197,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "value": -4.896856301782612,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        2,
+        0,
+        0
+      ],
+      "value": -4.2524653461717214,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "value": -4.346524516660066,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "value": -4.859548201033315,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "value": -4.868480765624748,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "value": -4.140286387087582,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "value": -4.014808687598632,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        3,
+        1,
+        0
+      ],
+      "value": -4.826749562749498,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "value": -4.814867429406675,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        4,
+        0,
+        0
+      ],
+      "value": -3.6720935228659517,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        4,
+        0,
+        1
+      ],
+      "value": -3.8436208514858405,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        4,
+        1,
+        0
+      ],
+      "value": -4.750041077963512,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        4,
+        1,
+        1
+      ],
+      "value": -4.766230004729002,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        5,
+        0,
+        0
+      ],
+      "value": -3.443092126065682,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        5,
+        0,
+        1
+      ],
+      "value": -2.9224407576689444,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        5,
+        1,
+        0
+      ],
+      "value": -4.702746540297074,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        5,
+        1,
+        1
+      ],
+      "value": -4.6588020668070484,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        6,
+        0,
+        0
+      ],
+      "value": -2.1144114676030474,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        6,
+        0,
+        1
+      ],
+      "value": -3.1407816215314064,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        6,
+        1,
+        0
+      ],
+      "value": -4.535338017948158,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        6,
+        1,
+        1
+      ],
+      "value": -4.869973706838338,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        7,
+        0,
+        0
+      ],
+      "value": -0.6431708936483077,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        7,
+        0,
+        1
+      ],
+      "value": -0.4893964035941206,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        7,
+        1,
+        0
+      ],
+      "value": -4.447996630533861,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        7,
+        1,
+        1
+      ],
+      "value": -4.393781327208877,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        8,
+        0,
+        0
+      ],
+      "value": 1.2593394274223833,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        8,
+        0,
+        1
+      ],
+      "value": 1.259169892679673,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        8,
+        1,
+        0
+      ],
+      "value": -4.509881502283443,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        8,
+        1,
+        1
+      ],
+      "value": -4.822388282147067,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        9,
+        0,
+        0
+      ],
+      "value": 4.765776986962506,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        9,
+        0,
+        1
+      ],
+      "value": 4.766007585963573,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        9,
+        1,
+        0
+      ],
+      "value": -4.652376429082803,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        9,
+        1,
+        1
+      ],
+      "value": -4.62366692417898,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        10,
+        0,
+        0
+      ],
+      "value": 8.353146278678123,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        10,
+        0,
+        1
+      ],
+      "value": 8.352830979301709,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        10,
+        1,
+        0
+      ],
+      "value": -4.712674280688428,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        3,
+        10,
+        1,
+        1
+      ],
+      "value": -4.732516145171915,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        3,
+        11,
+        0,
+        0
+      ],
+      "value": 13.39874703810104,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        11,
+        0,
+        1
+      ],
+      "value": 13.399184251724911,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        3,
+        11,
+        1,
+        0
+      ],
+      "value": -4.964165470293038,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        3,
+        11,
+        1,
+        1
+      ],
+      "value": -4.955716751979953,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        3,
+        12,
+        0,
+        0
+      ],
+      "value": 8.961863774271766,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        12,
+        0,
+        1
+      ],
+      "value": 8.961576775271672,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        12,
+        1,
+        0
+      ],
+      "value": -5.814559767441436,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        3,
+        12,
+        1,
+        1
+      ],
+      "value": -5.815255185529021,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        1,
+        0,
+        0
+      ],
+      "value": -4.323578116114225,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "value": -4.400099274668578,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "value": -4.873585960471662,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "value": -4.8810509091903125,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        2,
+        0,
+        0
+      ],
+      "value": -4.1850994850294425,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        2,
+        0,
+        1
+      ],
+      "value": -4.082198454242799,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        2,
+        1,
+        0
+      ],
+      "value": -4.834577292594891,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "value": -4.824531535232571,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        3,
+        0,
+        0
+      ],
+      "value": -3.7562159741792707,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        3,
+        0,
+        1
+      ],
+      "value": -3.8948350196498227,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        3,
+        1,
+        0
+      ],
+      "value": -4.761612775310775,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "value": -4.77515769576055,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        4,
+        0,
+        0
+      ],
+      "value": -3.4952352646291653,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "value": -3.3079899472157925,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        4,
+        1,
+        0
+      ],
+      "value": -4.6935473695082255,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "value": -4.675230497291253,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        5,
+        0,
+        0
+      ],
+      "value": -2.691023632437723,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        5,
+        0,
+        1
+      ],
+      "value": -2.944281136476961,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        5,
+        1,
+        0
+      ],
+      "value": -4.556205842397046,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        5,
+        1,
+        1
+      ],
+      "value": -4.581016005268251,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        6,
+        0,
+        0
+      ],
+      "value": -2.1815333331425917,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        6,
+        0,
+        1
+      ],
+      "value": -1.874190485897017,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        6,
+        1,
+        0
+      ],
+      "value": -4.423323347154243,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        6,
+        1,
+        1
+      ],
+      "value": -4.3923927287919975,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        7,
+        0,
+        0
+      ],
+      "value": -0.7772332545863951,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        7,
+        0,
+        1
+      ],
+      "value": -1.1024469218837474,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        7,
+        1,
+        0
+      ],
+      "value": -4.172130883734914,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        7,
+        1,
+        1
+      ],
+      "value": -4.175949486585977,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        8,
+        0,
+        0
+      ],
+      "value": 0.6245431744965257,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        8,
+        0,
+        1
+      ],
+      "value": 0.6246775742392697,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        4,
+        8,
+        1,
+        0
+      ],
+      "value": -4.358449449433979,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        8,
+        1,
+        1
+      ],
+      "value": -4.357008815894368,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        9,
+        0,
+        0
+      ],
+      "value": 2.460465571988777,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        9,
+        0,
+        1
+      ],
+      "value": 2.460291256141536,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        9,
+        1,
+        0
+      ],
+      "value": -4.509160096158055,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        9,
+        1,
+        1
+      ],
+      "value": -4.512475117026892,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        10,
+        0,
+        0
+      ],
+      "value": 4.502881638374486,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        10,
+        0,
+        1
+      ],
+      "value": 4.5030813947347434,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        10,
+        1,
+        0
+      ],
+      "value": -4.630659791310966,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        10,
+        1,
+        1
+      ],
+      "value": -4.6268596764173635,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        12,
+        0,
+        0
+      ],
+      "value": 13.394887360460746,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        12,
+        0,
+        1
+      ],
+      "value": 13.395317019572264,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        4,
+        12,
+        1,
+        0
+      ],
+      "value": -5.5514955721318024,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        12,
+        1,
+        1
+      ],
+      "value": -5.551378143896286,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        4,
+        13,
+        0,
+        0
+      ],
+      "value": 8.063053528074029,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        13,
+        0,
+        1
+      ],
+      "value": 8.062816474772077,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        13,
+        1,
+        0
+      ],
+      "value": -6.372490926853187,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        4,
+        13,
+        1,
+        1
+      ],
+      "value": -6.372555714844157,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        1,
+        0,
+        0
+      ],
+      "value": -4.513053473822123,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        1,
+        0,
+        1
+      ],
+      "value": -4.450275249617732,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "value": -4.9329479197281865,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "value": -4.926715922252197,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        2,
+        0,
+        0
+      ],
+      "value": -4.225287524870472,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        2,
+        0,
+        1
+      ],
+      "value": -4.308538874771707,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        2,
+        1,
+        0
+      ],
+      "value": -4.854193786887396,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "value": -4.8624738257267355,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        3,
+        0,
+        0
+      ],
+      "value": -4.083269227850065,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        3,
+        0,
+        1
+      ],
+      "value": -3.9739713986395007,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        3,
+        1,
+        0
+      ],
+      "value": -4.81434267819141,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        3,
+        1,
+        1
+      ],
+      "value": -4.803448283647832,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        4,
+        0,
+        0
+      ],
+      "value": -3.649591747159354,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        4,
+        0,
+        1
+      ],
+      "value": -3.7925708533435705,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        4,
+        1,
+        0
+      ],
+      "value": -4.740693399000697,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "value": -4.754984071977725,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        5,
+        0,
+        0
+      ],
+      "value": -3.4081554040603588,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        5,
+        0,
+        1
+      ],
+      "value": -3.221830750243104,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        5,
+        1,
+        0
+      ],
+      "value": -4.673366748322053,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        5,
+        1,
+        1
+      ],
+      "value": -4.654629132819969,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        6,
+        0,
+        0
+      ],
+      "value": -2.595103560958847,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        6,
+        0,
+        1
+      ],
+      "value": -2.808809658897166,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        6,
+        1,
+        0
+      ],
+      "value": -4.492524022072481,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        6,
+        1,
+        1
+      ],
+      "value": -4.5139722399018485,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        7,
+        0,
+        0
+      ],
+      "value": -1.7496986566070687,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        7,
+        0,
+        1
+      ],
+      "value": -1.7234398642718478,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        7,
+        1,
+        0
+      ],
+      "value": -3.8646994732170556,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        5,
+        7,
+        1,
+        1
+      ],
+      "value": -3.862779312750002,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        5,
+        8,
+        0,
+        0
+      ],
+      "value": -0.6345943184925301,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        8,
+        0,
+        1
+      ],
+      "value": -0.6347102537519629,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        8,
+        1,
+        0
+      ],
+      "value": -4.160164902348317,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        8,
+        1,
+        1
+      ],
+      "value": -4.16152418928897,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        9,
+        0,
+        0
+      ],
+      "value": 0.7067613004336102,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        9,
+        0,
+        1
+      ],
+      "value": 0.70689429153915,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        9,
+        1,
+        0
+      ],
+      "value": -4.385966938280657,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        9,
+        1,
+        1
+      ],
+      "value": -4.3847637506408965,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        10,
+        0,
+        0
+      ],
+      "value": 2.28704839365777,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        10,
+        0,
+        1
+      ],
+      "value": 2.2868964668802843,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        10,
+        1,
+        0
+      ],
+      "value": -4.549790905258549,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        10,
+        1,
+        1
+      ],
+      "value": -4.550930309994403,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        11,
+        0,
+        0
+      ],
+      "value": 4.356391435256942,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        11,
+        0,
+        1
+      ],
+      "value": 4.356559478007205,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        5,
+        11,
+        1,
+        0
+      ],
+      "value": -4.916129881893364,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        5,
+        11,
+        1,
+        1
+      ],
+      "value": -4.915866069962131,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        5,
+        12,
+        0,
+        0
+      ],
+      "value": 8.17555031033523,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        12,
+        0,
+        1
+      ],
+      "value": 8.175283249918374,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        5,
+        12,
+        1,
+        0
+      ],
+      "value": -4.996030036986738,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        5,
+        12,
+        1,
+        1
+      ],
+      "value": -4.996220098635405,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        1,
+        0,
+        0
+      ],
+      "value": -5.0025622893197,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        1,
+        0,
+        1
+      ],
+      "value": -5.044758133552559,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        1,
+        1,
+        0
+      ],
+      "value": -5.376812772581299,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        1,
+        1,
+        1
+      ],
+      "value": -5.381007481597768,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        2,
+        0,
+        0
+      ],
+      "value": -4.505482610917518,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        2,
+        0,
+        1
+      ],
+      "value": -4.442124401818037,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        2,
+        1,
+        0
+      ],
+      "value": -4.931604103457767,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        2,
+        1,
+        1
+      ],
+      "value": -4.925304531676975,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        3,
+        0,
+        0
+      ],
+      "value": -4.221692518732774,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        3,
+        0,
+        1
+      ],
+      "value": -4.305463488508092,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        3,
+        1,
+        0
+      ],
+      "value": -4.855943578281397,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "value": -4.864253205810087,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        4,
+        0,
+        0
+      ],
+      "value": -4.146657156862889,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        4,
+        0,
+        1
+      ],
+      "value": -4.037260877618095,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        4,
+        1,
+        0
+      ],
+      "value": -4.856819543636803,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        4,
+        1,
+        1
+      ],
+      "value": -4.846403927657587,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        5,
+        0,
+        0
+      ],
+      "value": -4.547334461471353,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        5,
+        0,
+        1
+      ],
+      "value": -4.687184132401492,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        5,
+        1,
+        0
+      ],
+      "value": -5.298558325432707,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        5,
+        1,
+        1
+      ],
+      "value": -5.306118513827953,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        6,
+        0,
+        0
+      ],
+      "value": -3.427901252921885,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        6,
+        0,
+        1
+      ],
+      "value": -3.2797738761586595,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "value": -4.273525390216293,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        6,
+        1,
+        1
+      ],
+      "value": -4.27184815177944,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        7,
+        0,
+        0
+      ],
+      "value": -3.1890104925302314,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        7,
+        0,
+        1
+      ],
+      "value": -3.19110424732711,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        6,
+        7,
+        1,
+        0
+      ],
+      "value": -3.391506560619277,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        6,
+        7,
+        1,
+        1
+      ],
+      "value": -3.3916558732527955,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        6,
+        8,
+        0,
+        0
+      ],
+      "value": -1.7125117415704811,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        8,
+        0,
+        1
+      ],
+      "value": -1.7122608793890508,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        8,
+        1,
+        0
+      ],
+      "value": -4.24300713094167,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        8,
+        1,
+        1
+      ],
+      "value": -4.2428179614595365,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        9,
+        0,
+        0
+      ],
+      "value": -0.6374959435561436,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        9,
+        0,
+        1
+      ],
+      "value": -0.6376104839459522,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        9,
+        1,
+        0
+      ],
+      "value": -4.519067568061862,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        9,
+        1,
+        1
+      ],
+      "value": -4.5199180971647985,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        10,
+        0,
+        0
+      ],
+      "value": 0.5882902970555903,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        10,
+        0,
+        1
+      ],
+      "value": 0.5884072609278173,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        10,
+        1,
+        0
+      ],
+      "value": -4.668233577319732,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        10,
+        1,
+        1
+      ],
+      "value": -4.667416634132992,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        11,
+        0,
+        0
+      ],
+      "value": 2.1961995627223283,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        11,
+        0,
+        1
+      ],
+      "value": 2.196067468935071,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        11,
+        1,
+        0
+      ],
+      "value": -4.925313116170878,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        11,
+        1,
+        1
+      ],
+      "value": -4.925559139015771,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        12,
+        0,
+        0
+      ],
+      "value": 4.5114215891219684,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        12,
+        0,
+        1
+      ],
+      "value": 4.511611455605875,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        12,
+        1,
+        0
+      ],
+      "value": -5.07221660159469,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        12,
+        1,
+        1
+      ],
+      "value": -5.072068754654237,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        6,
+        13,
+        0,
+        0
+      ],
+      "value": 1.2945411552804829,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        13,
+        0,
+        1
+      ],
+      "value": 1.2944364013594412,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        13,
+        1,
+        0
+      ],
+      "value": -6.007306017469679,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        6,
+        13,
+        1,
+        1
+      ],
+      "value": -6.007387588194316,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        7,
+        7,
+        0,
+        0
+      ],
+      "value": -4.573954632264202,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        7,
+        7,
+        0,
+        1
+      ],
+      "value": -4.572799457202827,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        7,
+        7,
+        1,
+        0
+      ],
+      "value": -1.2661457368127471,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "value": -1.2661457368127471,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        1,
+        0,
+        0
+      ],
+      "value": -6.874624958379259,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "value": -6.874624958379259,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        1,
+        1,
+        0
+      ],
+      "value": -5.720572438649386,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "value": -5.720572438649386,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        2,
+        0,
+        0
+      ],
+      "value": -5.635515688637111,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        2,
+        0,
+        1
+      ],
+      "value": -5.635515688637111,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        2,
+        1,
+        0
+      ],
+      "value": -4.162142319494638,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        2,
+        1,
+        1
+      ],
+      "value": -4.162142319494638,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        4,
+        0,
+        0
+      ],
+      "value": -5.438135560249749,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        4,
+        0,
+        1
+      ],
+      "value": -5.438135560249749,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        4,
+        1,
+        0
+      ],
+      "value": -2.6546414141234473,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        4,
+        1,
+        1
+      ],
+      "value": -2.6546414141234473,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        8,
+        5,
+        0,
+        0
+      ],
+      "value": -5.03532197386075,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        5,
+        0,
+        1
+      ],
+      "value": -5.03532197386075,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        5,
+        1,
+        0
+      ],
+      "value": -1.4454012152250382,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        5,
+        1,
+        1
+      ],
+      "value": -1.4454012152250382,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        6,
+        0,
+        0
+      ],
+      "value": -5.003079620355519,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        6,
+        0,
+        1
+      ],
+      "value": -5.003079620355519,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        6,
+        1,
+        0
+      ],
+      "value": -0.30409596902557223,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        6,
+        1,
+        1
+      ],
+      "value": -0.30409596902557223,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        7,
+        0,
+        0
+      ],
+      "value": -5.00309812614128,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        7,
+        0,
+        1
+      ],
+      "value": -5.00309812614128,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        7,
+        1,
+        0
+      ],
+      "value": 1.1506837204332694,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        7,
+        1,
+        1
+      ],
+      "value": 1.1506837204332694,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        8,
+        0,
+        0
+      ],
+      "value": -5.035473759719201,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        8,
+        0,
+        1
+      ],
+      "value": -5.035473759719201,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        8,
+        1,
+        0
+      ],
+      "value": 3.0079884477134944,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "value": 3.0079884477134944,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        9,
+        0,
+        0
+      ],
+      "value": -5.438944491961542,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        9,
+        0,
+        1
+      ],
+      "value": -5.438944491961542,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        9,
+        1,
+        0
+      ],
+      "value": 4.851106205393995,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        9,
+        1,
+        1
+      ],
+      "value": 4.851106205393995,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        11,
+        0,
+        0
+      ],
+      "value": -5.507897265158249,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        11,
+        0,
+        1
+      ],
+      "value": -5.507897265158249,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        11,
+        1,
+        0
+      ],
+      "value": 12.090874108592933,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        11,
+        1,
+        1
+      ],
+      "value": 12.090874108592933,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        12,
+        0,
+        0
+      ],
+      "value": -5.470558138061788,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        12,
+        0,
+        1
+      ],
+      "value": -5.470558138061788,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        12,
+        1,
+        0
+      ],
+      "value": 8.023023150199045,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        12,
+        1,
+        1
+      ],
+      "value": 8.023023150199045,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        8,
+        13,
+        0,
+        0
+      ],
+      "value": -6.3109014299024135,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        8,
+        13,
+        0,
+        1
+      ],
+      "value": -6.3109014299024135,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        8,
+        13,
+        1,
+        0
+      ],
+      "value": 3.9699224001516535,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        8,
+        13,
+        1,
+        1
+      ],
+      "value": 3.9699224001516535,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        1,
+        0,
+        0
+      ],
+      "value": -5.224061602728191,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        1,
+        0,
+        1
+      ],
+      "value": -5.224061602728191,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        1,
+        1,
+        0
+      ],
+      "value": -3.7394444885108165,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        1,
+        1,
+        1
+      ],
+      "value": -3.7394444885108165,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        2,
+        0,
+        0
+      ],
+      "value": -5.054225693926355,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        2,
+        0,
+        1
+      ],
+      "value": -5.054225693926355,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        2,
+        1,
+        0
+      ],
+      "value": -3.080508029442368,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        2,
+        1,
+        1
+      ],
+      "value": -3.080508029442368,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        3,
+        0,
+        0
+      ],
+      "value": -5.00466209042552,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        3,
+        0,
+        1
+      ],
+      "value": -5.00466209042552,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        3,
+        1,
+        0
+      ],
+      "value": -2.41997502171968,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        3,
+        1,
+        1
+      ],
+      "value": -2.41997502171968,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        4,
+        0,
+        0
+      ],
+      "value": -5.0004046324343365,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        4,
+        0,
+        1
+      ],
+      "value": -5.0004046324343365,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        4,
+        1,
+        0
+      ],
+      "value": -1.465166540619332,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        4,
+        1,
+        1
+      ],
+      "value": -1.465166540619332,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        5,
+        0,
+        0
+      ],
+      "value": -5.000038697889724,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        5,
+        0,
+        1
+      ],
+      "value": -5.000038697889724,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        5,
+        1,
+        0
+      ],
+      "value": -0.3260972258954945,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        5,
+        1,
+        1
+      ],
+      "value": -0.3260972258954945,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        6,
+        0,
+        0
+      ],
+      "value": -5.00000940561318,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        6,
+        0,
+        1
+      ],
+      "value": -5.00000940561318,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        6,
+        1,
+        0
+      ],
+      "value": 1.1241897352465144,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        6,
+        1,
+        1
+      ],
+      "value": 1.1241897352465144,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        7,
+        0,
+        0
+      ],
+      "value": -5.0000216608944505,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        7,
+        0,
+        1
+      ],
+      "value": -5.0000216608944505,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        7,
+        1,
+        0
+      ],
+      "value": 3.022456753340993,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        7,
+        1,
+        1
+      ],
+      "value": 3.022456753340993,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        8,
+        0,
+        0
+      ],
+      "value": -5.000172433607377,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        8,
+        0,
+        1
+      ],
+      "value": -5.000172433607377,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        8,
+        1,
+        0
+      ],
+      "value": 5.512258208823927,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        8,
+        1,
+        1
+      ],
+      "value": 5.512258208823927,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        9,
+        0,
+        0
+      ],
+      "value": -5.001548498540426,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        9,
+        0,
+        1
+      ],
+      "value": -5.001548498540426,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        9,
+        1,
+        0
+      ],
+      "value": 8.78496661428968,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        9,
+        1,
+        1
+      ],
+      "value": 8.78496661428968,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        9,
+        10,
+        0,
+        0
+      ],
+      "value": -5.007517641806329,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        10,
+        0,
+        1
+      ],
+      "value": -5.007517641806329,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        10,
+        1,
+        0
+      ],
+      "value": 13.151832373965911,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        10,
+        1,
+        1
+      ],
+      "value": 13.151832373965911,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        11,
+        0,
+        0
+      ],
+      "value": -5.046282562720959,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        11,
+        0,
+        1
+      ],
+      "value": -5.046282562720959,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        11,
+        1,
+        0
+      ],
+      "value": 18.56525363732746,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        11,
+        1,
+        1
+      ],
+      "value": 18.56525363732746,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        9,
+        12,
+        0,
+        0
+      ],
+      "value": -5.507897265158249,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        12,
+        0,
+        1
+      ],
+      "value": -5.507897265158249,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        12,
+        1,
+        0
+      ],
+      "value": 12.090874108592933,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        9,
+        12,
+        1,
+        1
+      ],
+      "value": 12.090874108592933,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        1,
+        0,
+        0
+      ],
+      "value": -5.492339614775586,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        10,
+        1,
+        0,
+        1
+      ],
+      "value": -5.492339614775586,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        10,
+        1,
+        1,
+        0
+      ],
+      "value": -3.8784194321968726,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        10,
+        1,
+        1,
+        1
+      ],
+      "value": -3.8784194321968726,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        10,
+        2,
+        0,
+        0
+      ],
+      "value": -5.0050088525018515,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        2,
+        0,
+        1
+      ],
+      "value": -5.0050088525018515,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        2,
+        1,
+        0
+      ],
+      "value": -2.4844078747775202,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        2,
+        1,
+        1
+      ],
+      "value": -2.4844078747775202,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        3,
+        0,
+        0
+      ],
+      "value": -5.000455736802701,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        3,
+        0,
+        1
+      ],
+      "value": -5.000455736802701,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        3,
+        1,
+        0
+      ],
+      "value": -1.650501650179287,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        3,
+        1,
+        1
+      ],
+      "value": -1.650501650179287,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        4,
+        0,
+        0
+      ],
+      "value": -5.000044650947205,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        4,
+        0,
+        1
+      ],
+      "value": -5.000044650947205,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        4,
+        1,
+        0
+      ],
+      "value": -0.5511625364542457,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        4,
+        1,
+        1
+      ],
+      "value": -0.5511625364542457,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        5,
+        0,
+        0
+      ],
+      "value": -5.000008722004667,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        5,
+        0,
+        1
+      ],
+      "value": -5.000008722004667,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        5,
+        1,
+        0
+      ],
+      "value": 0.8756680095592413,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        5,
+        1,
+        1
+      ],
+      "value": 0.8756680095592413,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        6,
+        0,
+        0
+      ],
+      "value": -5.000007162730536,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        6,
+        0,
+        1
+      ],
+      "value": -5.000007162730536,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        6,
+        1,
+        0
+      ],
+      "value": 2.676813632879055,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        6,
+        1,
+        1
+      ],
+      "value": 2.676813632879055,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        7,
+        0,
+        0
+      ],
+      "value": -5.000011126552996,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        7,
+        0,
+        1
+      ],
+      "value": -5.000011126552996,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        7,
+        1,
+        0
+      ],
+      "value": 5.031960025737729,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        7,
+        1,
+        1
+      ],
+      "value": 5.031960025737729,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        8,
+        0,
+        0
+      ],
+      "value": -5.000073168890418,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        8,
+        0,
+        1
+      ],
+      "value": -5.000073168890418,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        8,
+        1,
+        0
+      ],
+      "value": 8.115506248268147,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        8,
+        1,
+        1
+      ],
+      "value": 8.115506248268147,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        9,
+        0,
+        0
+      ],
+      "value": -5.00145828085655,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        10,
+        9,
+        0,
+        1
+      ],
+      "value": -5.00145828085655,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        10,
+        9,
+        1,
+        0
+      ],
+      "value": 12.24631748149969,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        9,
+        1,
+        1
+      ],
+      "value": 12.24631748149969,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        10,
+        0,
+        0
+      ],
+      "value": -5.0057674439771755,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        10,
+        10,
+        0,
+        1
+      ],
+      "value": -5.0057674439771755,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        10,
+        10,
+        1,
+        0
+      ],
+      "value": 18.693460552869592,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        10,
+        1,
+        1
+      ],
+      "value": 18.693460552869592,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        10,
+        11,
+        0,
+        0
+      ],
+      "value": -5.010493724962809,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        11,
+        0,
+        1
+      ],
+      "value": -5.010493724962809,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        10,
+        11,
+        1,
+        0
+      ],
+      "value": 27.415370498004297,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        10,
+        11,
+        1,
+        1
+      ],
+      "value": 27.415370498004297,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        1,
+        0,
+        0
+      ],
+      "value": -5.082112100985126,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        1,
+        0,
+        1
+      ],
+      "value": -5.082112100985126,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        1,
+        1,
+        0
+      ],
+      "value": -3.077176949435814,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        1,
+        1,
+        1
+      ],
+      "value": -3.077176949435814,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        2,
+        0,
+        0
+      ],
+      "value": -5.004739158388473,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        2,
+        0,
+        1
+      ],
+      "value": -5.004739158388473,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        2,
+        1,
+        0
+      ],
+      "value": -2.2705772038423424,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        2,
+        1,
+        1
+      ],
+      "value": -2.2705772038423424,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        3,
+        0,
+        0
+      ],
+      "value": -5.000677502494279,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        3,
+        0,
+        1
+      ],
+      "value": -5.000677502494279,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        3,
+        1,
+        0
+      ],
+      "value": -1.301995313887438,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        3,
+        1,
+        1
+      ],
+      "value": -1.301995313887438,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        4,
+        0,
+        0
+      ],
+      "value": -5.000083818831701,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        4,
+        0,
+        1
+      ],
+      "value": -5.000083818831701,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        4,
+        1,
+        0
+      ],
+      "value": 0.07029075846732996,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        4,
+        1,
+        1
+      ],
+      "value": 0.07029075846732996,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        5,
+        0,
+        0
+      ],
+      "value": -5.000013115788017,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        5,
+        0,
+        1
+      ],
+      "value": -5.000013115788017,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        5,
+        1,
+        0
+      ],
+      "value": 2.3574382823535673,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        5,
+        1,
+        1
+      ],
+      "value": 2.3574382823535673,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        6,
+        0,
+        0
+      ],
+      "value": -5.000010442944483,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        6,
+        0,
+        1
+      ],
+      "value": -5.000010442944483,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        6,
+        1,
+        0
+      ],
+      "value": 4.580300469839838,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        6,
+        1,
+        1
+      ],
+      "value": 4.580300469839838,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        7,
+        0,
+        0
+      ],
+      "value": -5.000060209637429,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        7,
+        0,
+        1
+      ],
+      "value": -5.000060209637429,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        11,
+        7,
+        1,
+        0
+      ],
+      "value": 7.452993582235435,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        7,
+        1,
+        1
+      ],
+      "value": 7.452993582235435,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        8,
+        0,
+        0
+      ],
+      "value": -5.00065325556278,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        11,
+        8,
+        0,
+        1
+      ],
+      "value": -5.00065325556278,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        11,
+        8,
+        1,
+        0
+      ],
+      "value": 10.461030042530378,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        8,
+        1,
+        1
+      ],
+      "value": 10.461030042530378,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        11,
+        0,
+        0
+      ],
+      "value": -5.038749538015741,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        11,
+        0,
+        1
+      ],
+      "value": -5.038749538015741,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        11,
+        11,
+        1,
+        0
+      ],
+      "value": 39.26041252177247,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        11,
+        1,
+        1
+      ],
+      "value": 39.26041252177247,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        12,
+        0,
+        0
+      ],
+      "value": -5.0564909897716,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        12,
+        0,
+        1
+      ],
+      "value": -5.0564909897716,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        12,
+        1,
+        0
+      ],
+      "value": 52.110527111153715,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        12,
+        1,
+        1
+      ],
+      "value": 52.110527111153715,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        13,
+        0,
+        0
+      ],
+      "value": -5.482081721801368,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        11,
+        13,
+        0,
+        1
+      ],
+      "value": -5.482081721801368,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        11,
+        13,
+        1,
+        0
+      ],
+      "value": 67.26185544574797,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        11,
+        13,
+        1,
+        1
+      ],
+      "value": 67.26185544574797,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        1,
+        0,
+        0
+      ],
+      "value": -5.496148470893991,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        1,
+        0,
+        1
+      ],
+      "value": -5.496148470893991,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        1,
+        1,
+        0
+      ],
+      "value": -3.921674805012067,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        1,
+        1,
+        1
+      ],
+      "value": -3.921674805012067,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        2,
+        0,
+        0
+      ],
+      "value": -5.048810697863517,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        2,
+        0,
+        1
+      ],
+      "value": -5.048810697863517,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        2,
+        1,
+        0
+      ],
+      "value": -2.9818446621522505,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        2,
+        1,
+        1
+      ],
+      "value": -2.9818446621522505,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        3,
+        0,
+        0
+      ],
+      "value": -5.07607207575547,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        3,
+        0,
+        1
+      ],
+      "value": -5.07607207575547,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        3,
+        1,
+        0
+      ],
+      "value": -2.6867658411523268,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        3,
+        1,
+        1
+      ],
+      "value": -2.6867658411523268,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        5,
+        0,
+        0
+      ],
+      "value": -5.03931460878939,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        5,
+        0,
+        1
+      ],
+      "value": -5.03931460878939,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        5,
+        1,
+        0
+      ],
+      "value": 4.449906761141641,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        5,
+        1,
+        1
+      ],
+      "value": 4.449906761141641,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        6,
+        0,
+        0
+      ],
+      "value": -5.003224272458413,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        6,
+        0,
+        1
+      ],
+      "value": -5.003224272458413,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        6,
+        1,
+        0
+      ],
+      "value": 7.452993582235436,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        6,
+        1,
+        1
+      ],
+      "value": 7.452993582235436,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        7,
+        0,
+        0
+      ],
+      "value": -5.000905343848222,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        7,
+        0,
+        1
+      ],
+      "value": -5.000905343848222,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        12,
+        7,
+        1,
+        0
+      ],
+      "value": 11.32763615819659,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        7,
+        1,
+        1
+      ],
+      "value": 11.32763615819659,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        8,
+        0,
+        0
+      ],
+      "value": -5.007610939008639,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        8,
+        0,
+        1
+      ],
+      "value": -5.007610939008639,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        8,
+        1,
+        0
+      ],
+      "value": 16.293606488357987,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        8,
+        1,
+        1
+      ],
+      "value": 16.293606488357987,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        10,
+        0,
+        0
+      ],
+      "value": -5.484448666713845,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        10,
+        0,
+        1
+      ],
+      "value": -5.484448666713845,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        10,
+        1,
+        0
+      ],
+      "value": 38.96010162127334,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        10,
+        1,
+        1
+      ],
+      "value": 38.96010162127334,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        11,
+        0,
+        0
+      ],
+      "value": -5.0219476733046715,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        11,
+        0,
+        1
+      ],
+      "value": -5.0219476733046715,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        11,
+        1,
+        0
+      ],
+      "value": 52.110527111153715,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        11,
+        1,
+        1
+      ],
+      "value": 52.110527111153715,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        12,
+        12,
+        0,
+        0
+      ],
+      "value": -5.02316327537799,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        12,
+        0,
+        1
+      ],
+      "value": -5.02316327537799,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        12,
+        1,
+        0
+      ],
+      "value": 69.66991511523761,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        12,
+        1,
+        1
+      ],
+      "value": 69.66991511523761,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        13,
+        0,
+        0
+      ],
+      "value": -5.092011973798888,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        13,
+        0,
+        1
+      ],
+      "value": -5.092011973798888,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        12,
+        13,
+        1,
+        0
+      ],
+      "value": 92.36260131436849,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        12,
+        13,
+        1,
+        1
+      ],
+      "value": 92.36260131436849,
+      "best_action": 1,
+      "best_action_name": "DOWN"
+    },
+    {
+      "state": [
+        13,
+        1,
+        0,
+        0
+      ],
+      "value": -5.851965009492291,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        1,
+        0,
+        1
+      ],
+      "value": -5.851965009492291,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        1,
+        1,
+        0
+      ],
+      "value": -4.63302527067133,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        1,
+        1,
+        1
+      ],
+      "value": -4.63302527067133,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        2,
+        0,
+        0
+      ],
+      "value": -5.828409932472777,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        2,
+        0,
+        1
+      ],
+      "value": -5.828409932472777,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        2,
+        1,
+        0
+      ],
+      "value": -4.406392172623742,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        2,
+        1,
+        1
+      ],
+      "value": -4.406392172623742,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        3,
+        0,
+        0
+      ],
+      "value": -5.559737952004627,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        3,
+        0,
+        1
+      ],
+      "value": -5.559737952004627,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        3,
+        1,
+        0
+      ],
+      "value": -3.773958165377597,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        3,
+        1,
+        1
+      ],
+      "value": -3.773958165377597,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        5,
+        0,
+        0
+      ],
+      "value": -5.465625404875742,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        5,
+        0,
+        1
+      ],
+      "value": -5.465625404875742,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        5,
+        1,
+        0
+      ],
+      "value": 6.142447574033452,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        5,
+        1,
+        1
+      ],
+      "value": 6.142447574033452,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        6,
+        0,
+        0
+      ],
+      "value": -5.04017537621924,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        6,
+        0,
+        1
+      ],
+      "value": -5.04017537621924,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        6,
+        1,
+        0
+      ],
+      "value": 10.461030042530382,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        6,
+        1,
+        1
+      ],
+      "value": 10.461030042530382,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        7,
+        0,
+        0
+      ],
+      "value": -5.0107727086611575,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        7,
+        0,
+        1
+      ],
+      "value": -5.0107727086611575,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        7,
+        1,
+        0
+      ],
+      "value": 16.29360648835799,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        7,
+        1,
+        1
+      ],
+      "value": 16.29360648835799,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        8,
+        0,
+        0
+      ],
+      "value": -5.087240821722805,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        8,
+        0,
+        1
+      ],
+      "value": -5.087240821722805,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        8,
+        1,
+        0
+      ],
+      "value": 24.193604807240032,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        8,
+        1,
+        1
+      ],
+      "value": 24.193604807240032,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        9,
+        0,
+        0
+      ],
+      "value": -6.018850141268478,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        13,
+        9,
+        0,
+        1
+      ],
+      "value": -6.018850141268478,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        13,
+        9,
+        1,
+        0
+      ],
+      "value": 34.92910609936279,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        9,
+        1,
+        1
+      ],
+      "value": 34.92910609936279,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        10,
+        0,
+        0
+      ],
+      "value": -5.395578372017866,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        10,
+        0,
+        1
+      ],
+      "value": -5.395578372017866,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        10,
+        1,
+        0
+      ],
+      "value": 48.65695175541366,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        10,
+        1,
+        1
+      ],
+      "value": 48.65695175541366,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        11,
+        0,
+        0
+      ],
+      "value": -5.050290265958738,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        11,
+        0,
+        1
+      ],
+      "value": -5.050290265958738,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        11,
+        1,
+        0
+      ],
+      "value": 67.26185544574797,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        11,
+        1,
+        1
+      ],
+      "value": 67.26185544574797,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        12,
+        0,
+        0
+      ],
+      "value": -5.0574686573319605,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        12,
+        0,
+        1
+      ],
+      "value": -5.0574686573319605,
+      "best_action": 0,
+      "best_action_name": "UP"
+    },
+    {
+      "state": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "value": 92.36260131436848,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        12,
+        1,
+        1
+      ],
+      "value": 92.36260131436848,
+      "best_action": 3,
+      "best_action_name": "RIGHT"
+    },
+    {
+      "state": [
+        13,
+        13,
+        0,
+        0
+      ],
+      "value": -5.482761838364625,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        13,
+        13,
+        0,
+        1
+      ],
+      "value": -5.482761838364625,
+      "best_action": 2,
+      "best_action_name": "LEFT"
+    },
+    {
+      "state": [
+        13,
+        13,
+        1,
+        0
+      ],
+      "value": 0.0,
+      "best_action": null,
+      "best_action_name": "TERMINAL"
+    },
+    {
+      "state": [
+        13,
+        13,
+        1,
+        1
+      ],
+      "value": 0.0,
+      "best_action": null,
+      "best_action_name": "TERMINAL"
+    }
+  ]
+}
