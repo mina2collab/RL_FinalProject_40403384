@@ -1,0 +1,99 @@
+{
+  "student_id": "40403384",
+  "seed": 108,
+  "size": 15,
+  "symbols": {
+    "wall": "#",
+    "empty": ".",
+    "start": "S",
+    "key": "K",
+    "door": "D",
+    "goal": "G",
+    "penalty": "P",
+    "periodic_gate": "T"
+  },
+  "positions": {
+    "start": [
+      1,
+      1
+    ],
+    "key": [
+      3,
+      12
+    ],
+    "door": [
+      7,
+      7
+    ],
+    "goal": [
+      13,
+      13
+    ],
+    "periodic_gate": [
+      3,
+      7
+    ],
+    "penalties": [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        13,
+        1
+      ]
+    ]
+  },
+  "dynamic_feature": {
+    "type": "periodic_gate",
+    "period": 2,
+    "open_phase": 0
+  },
+  "validation": {
+    "wall_count": 84,
+    "wall_ratio": 0.37333333333333335,
+    "path_start_to_key_length": 13,
+    "path_key_to_goal_length": 21
+  },
+  "grid": [
+    "###############",
+    "#S....#.......#",
+    "#...#...P...P.#",
+    "#......T....K##",
+    "#.............#",
+    "#........#...##",
+    "#.....P.......#",
+    "#######D#######",
+    "#..#..#...#...#",
+    "#P...........##",
+    "#........#.##.#",
+    "#........##...#",
+    "#...#.........#",
+    "#P..#........G#",
+    "###############"
+  ],
+  "transfer_metadata": {
+    "target_type": "similar",
+    "generation_attempt": 1,
+    "movement_ratio_requested": 0.15,
+    "moved_wall_count": 4,
+    "moved_wall_percentage": 14.285714285714286,
+    "changed_wall_cells": 8,
+    "added_wall_count": 4,
+    "removed_wall_count": 4,
+    "key_moved": false,
+    "new_penalty_count": 0
+  }
+}

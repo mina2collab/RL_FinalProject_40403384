@@ -1,0 +1,26 @@
+{
+  "state": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "action": 3,
+  "action_name": "RIGHT",
+  "reward": -0.9600000000000002,
+  "next_state": [
+    1,
+    2,
+    0,
+    1
+  ],
+  "terminated": false,
+  "truncated": false,
+  "old_q": -2.95103053559898,
+  "next_max_q": -2.764235940608095,
+  "target": -3.5860241435776903,
+  "td_error": -0.6349936079787102,
+  "alpha": 0.1,
+  "gamma": 0.95,
+  "new_q": -3.014529896396851
+}
