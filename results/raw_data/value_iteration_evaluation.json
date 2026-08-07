@@ -1,0 +1,923 @@
+{
+  "student_id": "40403384",
+  "convergence": {
+    "converged": true,
+    "iterations": 361,
+    "runtime_seconds": 5.441756401211023,
+    "final_delta": 9.584123716877002e-09
+  },
+  "evaluation": {
+    "algorithm": "Value Iteration",
+    "gamma": 0.95,
+    "theta": 1e-08,
+    "reward_mode": "sparse",
+    "evaluation_episodes": 100,
+    "base_seed": 8,
+    "seed_offset": 10000,
+    "success_rate": 100.0,
+    "average_reward": 65.74,
+    "average_steps": 47.6
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "seed": 10008,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 2,
+      "seed": 10009,
+      "success": 1,
+      "reward": 56.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 3,
+      "seed": 10010,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 43,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 4,
+      "seed": 10011,
+      "success": 1,
+      "reward": 74.0,
+      "steps": 40,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 5,
+      "seed": 10012,
+      "success": 1,
+      "reward": 76.0,
+      "steps": 38,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 6,
+      "seed": 10013,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 7,
+      "seed": 10014,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 8,
+      "seed": 10015,
+      "success": 1,
+      "reward": 55.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 9,
+      "seed": 10016,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 10,
+      "seed": 10017,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 11,
+      "seed": 10018,
+      "success": 1,
+      "reward": 70.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 12,
+      "seed": 10019,
+      "success": 1,
+      "reward": 80.0,
+      "steps": 42,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 13,
+      "seed": 10020,
+      "success": 1,
+      "reward": 60.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 14,
+      "seed": 10021,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 15,
+      "seed": 10022,
+      "success": 1,
+      "reward": 51.0,
+      "steps": 59,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 16,
+      "seed": 10023,
+      "success": 1,
+      "reward": 73.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 17,
+      "seed": 10024,
+      "success": 1,
+      "reward": 79.0,
+      "steps": 39,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 18,
+      "seed": 10025,
+      "success": 1,
+      "reward": 64.0,
+      "steps": 50,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 19,
+      "seed": 10026,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 43,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 20,
+      "seed": 10027,
+      "success": 1,
+      "reward": 80.0,
+      "steps": 42,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 21,
+      "seed": 10028,
+      "success": 1,
+      "reward": 58.0,
+      "steps": 48,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 22,
+      "seed": 10029,
+      "success": 1,
+      "reward": 70.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 23,
+      "seed": 10030,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 54,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 24,
+      "seed": 10031,
+      "success": 1,
+      "reward": 59.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 25,
+      "seed": 10032,
+      "success": 1,
+      "reward": 57.0,
+      "steps": 48,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 26,
+      "seed": 10033,
+      "success": 1,
+      "reward": 55.0,
+      "steps": 55,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 27,
+      "seed": 10034,
+      "success": 1,
+      "reward": 60.0,
+      "steps": 51,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 28,
+      "seed": 10035,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 54,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 29,
+      "seed": 10036,
+      "success": 1,
+      "reward": 71.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 30,
+      "seed": 10037,
+      "success": 1,
+      "reward": 73.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 31,
+      "seed": 10038,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 32,
+      "seed": 10039,
+      "success": 1,
+      "reward": 76.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 33,
+      "seed": 10040,
+      "success": 1,
+      "reward": 74.0,
+      "steps": 48,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 34,
+      "seed": 10041,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 35,
+      "seed": 10042,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 36,
+      "seed": 10043,
+      "success": 1,
+      "reward": 78.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 37,
+      "seed": 10044,
+      "success": 1,
+      "reward": 63.0,
+      "steps": 55,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 38,
+      "seed": 10045,
+      "success": 1,
+      "reward": 71.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 39,
+      "seed": 10046,
+      "success": 1,
+      "reward": 58.0,
+      "steps": 56,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 40,
+      "seed": 10047,
+      "success": 1,
+      "reward": 63.0,
+      "steps": 55,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 41,
+      "seed": 10048,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 42,
+      "seed": 10049,
+      "success": 1,
+      "reward": 79.0,
+      "steps": 36,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 43,
+      "seed": 10050,
+      "success": 1,
+      "reward": 65.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 44,
+      "seed": 10051,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 45,
+      "seed": 10052,
+      "success": 1,
+      "reward": 63.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 46,
+      "seed": 10053,
+      "success": 1,
+      "reward": 70.0,
+      "steps": 52,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 47,
+      "seed": 10054,
+      "success": 1,
+      "reward": 39.0,
+      "steps": 58,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 48,
+      "seed": 10055,
+      "success": 1,
+      "reward": 59.0,
+      "steps": 54,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 49,
+      "seed": 10056,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 50,
+      "seed": 10057,
+      "success": 1,
+      "reward": 80.0,
+      "steps": 42,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 51,
+      "seed": 10058,
+      "success": 1,
+      "reward": 62.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 52,
+      "seed": 10059,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 53,
+      "seed": 10060,
+      "success": 1,
+      "reward": 56.0,
+      "steps": 55,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 54,
+      "seed": 10061,
+      "success": 1,
+      "reward": 59.0,
+      "steps": 51,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 55,
+      "seed": 10062,
+      "success": 1,
+      "reward": 65.0,
+      "steps": 53,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 56,
+      "seed": 10063,
+      "success": 1,
+      "reward": 53.0,
+      "steps": 52,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 57,
+      "seed": 10064,
+      "success": 1,
+      "reward": 57.0,
+      "steps": 53,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 58,
+      "seed": 10065,
+      "success": 1,
+      "reward": 69.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 59,
+      "seed": 10066,
+      "success": 1,
+      "reward": 65.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 60,
+      "seed": 10067,
+      "success": 1,
+      "reward": 52.0,
+      "steps": 62,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 61,
+      "seed": 10068,
+      "success": 1,
+      "reward": 69.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 62,
+      "seed": 10069,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 51,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 63,
+      "seed": 10070,
+      "success": 1,
+      "reward": 71.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 64,
+      "seed": 10071,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 65,
+      "seed": 10072,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 66,
+      "seed": 10073,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 67,
+      "seed": 10074,
+      "success": 1,
+      "reward": 64.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 68,
+      "seed": 10075,
+      "success": 1,
+      "reward": 64.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 69,
+      "seed": 10076,
+      "success": 1,
+      "reward": 78.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 70,
+      "seed": 10077,
+      "success": 1,
+      "reward": 41.0,
+      "steps": 58,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 71,
+      "seed": 10078,
+      "success": 1,
+      "reward": 64.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 72,
+      "seed": 10079,
+      "success": 1,
+      "reward": 78.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 73,
+      "seed": 10080,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 50,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 74,
+      "seed": 10081,
+      "success": 1,
+      "reward": 49.0,
+      "steps": 53,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 75,
+      "seed": 10082,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 49,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 76,
+      "seed": 10083,
+      "success": 1,
+      "reward": 71.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 77,
+      "seed": 10084,
+      "success": 1,
+      "reward": 61.0,
+      "steps": 54,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 78,
+      "seed": 10085,
+      "success": 1,
+      "reward": 60.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 79,
+      "seed": 10086,
+      "success": 1,
+      "reward": 49.0,
+      "steps": 56,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 80,
+      "seed": 10087,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 43,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 81,
+      "seed": 10088,
+      "success": 1,
+      "reward": 73.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 82,
+      "seed": 10089,
+      "success": 1,
+      "reward": 77.0,
+      "steps": 41,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 83,
+      "seed": 10090,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 50,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 84,
+      "seed": 10091,
+      "success": 1,
+      "reward": 71.0,
+      "steps": 47,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 85,
+      "seed": 10092,
+      "success": 1,
+      "reward": 70.0,
+      "steps": 52,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 86,
+      "seed": 10093,
+      "success": 1,
+      "reward": 65.0,
+      "steps": 53,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 87,
+      "seed": 10094,
+      "success": 1,
+      "reward": 66.0,
+      "steps": 48,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 88,
+      "seed": 10095,
+      "success": 1,
+      "reward": 68.0,
+      "steps": 46,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 89,
+      "seed": 10096,
+      "success": 1,
+      "reward": 50.0,
+      "steps": 54,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 90,
+      "seed": 10097,
+      "success": 1,
+      "reward": 58.0,
+      "steps": 43,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 91,
+      "seed": 10098,
+      "success": 1,
+      "reward": 65.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 92,
+      "seed": 10099,
+      "success": 1,
+      "reward": 78.0,
+      "steps": 44,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 93,
+      "seed": 10100,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 42,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 94,
+      "seed": 10101,
+      "success": 1,
+      "reward": 73.0,
+      "steps": 45,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 95,
+      "seed": 10102,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 48,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 96,
+      "seed": 10103,
+      "success": 1,
+      "reward": 37.0,
+      "steps": 57,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 97,
+      "seed": 10104,
+      "success": 1,
+      "reward": 67.0,
+      "steps": 51,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 98,
+      "seed": 10105,
+      "success": 1,
+      "reward": 50.0,
+      "steps": 61,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 99,
+      "seed": 10106,
+      "success": 1,
+      "reward": 39.0,
+      "steps": 58,
+      "terminated": true,
+      "truncated": false
+    },
+    {
+      "episode": 100,
+      "seed": 10107,
+      "success": 1,
+      "reward": 72.0,
+      "steps": 42,
+      "terminated": true,
+      "truncated": false
+    }
+  ]
+}
