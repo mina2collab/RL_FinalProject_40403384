@@ -1,9 +1,9 @@
-# RL Final Project — Dynamic Maze
+# RL Final Project - Dynamic Maze
 
 **Student ID:** 40403384  
 **Base Seed:** 8  
-**Maze Size:** 15 × 15  
-**Course:** Reinforcement Learning  
+**Maze Size:** 15 x 15  
+**Course:** Reinforcement Learning
 
 This project implements and evaluates reinforcement-learning agents in a stochastic dynamic maze.
 
@@ -11,18 +11,19 @@ The project includes:
 
 - Value Iteration
 - Q-Learning
-- SARSA(λ) with replacing eligibility traces
+- SARSA(lambda) with replacing eligibility traces
 - Transfer Learning with Q-Learning
+- Reward shaping experiments
 - A Pygame graphical interface
 - Reproducible experiments
-- Saved models and raw results
+- Saved models, figures, configurations, and raw results
 - Unit tests
 
 ---
 
 ## 1. Environment
 
-The environment is a 15 × 15 dynamic maze generated using the student-specific seed.
+The environment is a 15 x 15 dynamic maze generated using the student-specific seed.
 
 ```text
 Student ID = 40403384
@@ -30,23 +31,9 @@ Base seed = 8
 Maze size = 15 + (8 % 4) = 15
 ```
 
-The maze contains:
+The maze contains walls, normal cells, penalty cells, a start position, a key, a locked door, a goal, and a periodic gate.
 
-- Walls
-- Normal cells
-- Penalty cells
-- Start position
-- Key
-- Locked door
-- Goal
-- Periodic gate
-
-The agent must:
-
-1. Start from the initial position.
-2. Collect the key.
-3. Pass through the locked door.
-4. Reach the goal.
+The agent must start from the initial position, collect the key, pass through the locked door, and reach the goal.
 
 ### State representation
 
@@ -56,17 +43,9 @@ The Markov state is represented as:
 (row, column, has_key, gate_phase)
 ```
 
-Where:
-
-- `row` and `column` are the agent position.
-- `has_key` shows whether the key has been collected.
-- `gate_phase` represents the current phase of the periodic gate.
-
-Including the gate phase and key status preserves the Markov property.
+The environment contains 141 passable cells, and the complete state representation contains 564 states.
 
 ### Actions
-
-The agent has four actions:
 
 ```text
 0 = UP
@@ -92,7 +71,13 @@ Two reward definitions are supported:
 - `sparse`
 - `shaped`
 
-The shaped reward provides intermediate feedback for useful behavior while preserving the main task objective.
+Potential-based reward shaping uses:
+
+```text
+F(s,s') = 0.20 * [gamma * Phi(s') - Phi(s)]
+```
+
+Before collecting the key, the potential is based on Manhattan distance to the key. After collecting the key, it is based on Manhattan distance to the goal.
 
 ---
 
@@ -105,62 +90,55 @@ Value Iteration uses the complete transition model and implements Bellman update
 The following discount factors are compared:
 
 ```text
-γ = 0.80
-γ = 0.90
-γ = 0.95
+gamma = 0.80
+gamma = 0.90
+gamma = 0.95
 ```
 
-The saved results include:
-
-- Number of iterations
-- Runtime
-- Final delta
-- State-value table
-- Greedy policy
-- Agreement with the reference policy
+The saved results include the number of iterations, runtime, final delta, state-value table, greedy policy, and agreement with the reference policy.
 
 ### Q-Learning
 
-Q-Learning is implemented as an off-policy, model-free algorithm with an ε-greedy behavior policy.
+Q-Learning is implemented as an off-policy, model-free algorithm with an epsilon-greedy behavior policy.
 
 Two epsilon schedules are compared:
 
 - Linear decay
 - Exponential decay
 
-The linear schedule produced better evaluation reward and fewer steps in the current experiments.
+The linear schedule produced better evaluation reward and fewer steps in the main schedule-comparison experiment.
 
-### SARSA(λ)
+Training CSV files also record episode-level environment events, including normal moves, wall collisions, penalty visits, closed-door attempts, successful door passes, periodic-gate events, key collection, goal reaching, and step-limit termination.
 
-SARSA(λ) is implemented as an on-policy algorithm using replacing eligibility traces.
+### SARSA(lambda)
 
-The following λ values are evaluated:
+SARSA(lambda) is implemented as an on-policy algorithm using replacing eligibility traces.
+
+The following lambda values are evaluated:
 
 ```text
-λ = 0.0
-λ = 0.3
-λ = 0.7
-λ = 0.9
+lambda = 0.0
+lambda = 0.3
+lambda = 0.7
+lambda = 0.9
 ```
 
-In the current results, `λ = 0.3` provides the best balance between success rate, reward, path length, and training time.
+In the current experiments, `lambda = 0.3` provides the strongest overall balance between success rate, reward, path quality, and stability.
 
-For a sample episode, consecutive changes in TD error `δ` and eligibility traces `E` are saved as JSON.
+For a sample episode, TD error and eligibility-trace information is saved for inspection.
 
 ---
 
 ## 3. Transfer Learning
 
-Transfer learning is performed using Q-Learning.
-
-The learned Q-table from the source maze is transferred to two destination environments.
+Transfer learning is performed using Q-Learning. The learned source Q-table is transferred to two destination environments.
 
 ### Similar target environment
 
 - Start, key, and goal remain fixed.
 - Two of fourteen interior walls are moved.
 - The resulting moved-wall percentage is `14.29%`.
-- This is the closest feasible discrete value to the requested 15–20% range.
+- This is the closest feasible discrete value to the requested 15-20% range.
 
 ### Different target environment
 
@@ -171,23 +149,18 @@ The learned Q-table from the source maze is transferred to two destination envir
 
 ### Transfer scenarios
 
-The following scenarios are evaluated:
+The evaluated scenarios are:
 
 1. Training from scratch
 2. Full Q-table transfer
-3. Scaled transfer with `β = 0.25`
-4. Scaled transfer with `β = 0.50`
-5. Scaled transfer with `β = 0.75`
+3. Scaled transfer with `beta = 0.25`
+4. Scaled transfer with `beta = 0.50`
+5. Scaled transfer with `beta = 0.75`
 6. Selective transfer
 
 Selective transfer copies only states whose local neighborhoods are unchanged.
 
-Current observations:
-
-- On the similar map, scaled transfer with `β = 0.75` gives the strongest final result.
-- On the different map, transferred policies reach strong final performance.
-- Some full and scaled transfers initially perform poorly, demonstrating negative transfer.
-- Selective transfer improves initial safety by skipping changed local regions.
+A state-level negative-transfer example is also recorded. At state `(3, 11, 0, 0)`, the transferred greedy action was initially `UP`, while the changed target structure favored `RIGHT`. After further target training, the greedy action was corrected to `RIGHT`.
 
 ---
 
@@ -195,45 +168,64 @@ Current observations:
 
 ```text
 RL_FinalProject_40403384/
-├── agents/
-│   ├── value_iteration.py
-│   ├── q_learning.py
-│   └── sarsa_lambda.py
-│
-├── environments/
-│   ├── generator.py
-│   ├── maze.py
-│   └── maps/
-│       ├── source_map.json
-│       ├── target_similar.json
-│       └── target_different.json
-│
-├── experiments/
-│   ├── run_value_iteration.py
-│   ├── run_q_learning.py
-│   ├── run_sarsa_lambda.py
-│   └── run_transfer_learning.py
-│
-├── gui/
-│   └── maze_gui.py
-│
-├── transfer/
-│   └── transfer_learning.py
-│
-├── tests/
-│   ├── test_maze.py
-│   ├── test_value_iteration.py
-│   ├── test_q_learning.py
-│   ├── test_sarsa_lambda.py
-│   └── test_transfer_learning.py
-│
-├── results/
-│   ├── models/
-│   └── raw_data/
-│
-├── main.py
-├── requirements.txt
-└── README.md
+|-- agents/
+|   |-- value_iteration.py
+|   |-- q_learning.py
+|   `-- sarsa_lambda.py
+|
+|-- analysis/
+|   |-- generate_figures.py
+|   |-- generate_q_learning_curve.py
+|   |-- generate_sarsa_lambda_curves.py
+|   |-- generate_value_iteration_convergence.py
+|   |-- generate_transfer_q_change.py
+|   |-- generate_reward_comparison_figures.py
+|   `-- measure_algorithm_memory.py
+|
+|-- configs/
+|   `-- experiment_config.json
+|
+|-- environments/
+|   |-- generator.py
+|   |-- maze.py
+|   `-- maps/
+|       |-- source_map.json
+|       |-- target_similar.json
+|       `-- target_different.json
+|
+|-- experiments/
+|   |-- run_value_iteration.py
+|   |-- evaluate_value_iteration.py
+|   |-- run_q_learning.py
+|   |-- run_sarsa_lambda.py
+|   |-- run_reward_comparison.py
+|   `-- run_transfer_learning.py
+|
+|-- gui/
+|   `-- maze_gui.py
+|
+|-- transfer/
+|   `-- transfer_learning.py
+|
+|-- tests/
+|   |-- test_maze.py
+|   |-- test_value_iteration.py
+|   |-- test_q_learning.py
+|   |-- test_sarsa_lambda.py
+|   `-- test_transfer_learning.py
+|
+|-- results/
+|   |-- figures/
+|   |-- models/
+|   `-- raw_data/
+|
+|-- report/
+|   `-- RL_Final_Report_40403384.docx
+|
+|-- main.py
+|-- requirements.txt
+|-- README.md
+`-- report.pdf
 ```
 
 ---
@@ -244,25 +236,32 @@ The project was tested with:
 
 ```text
 Python 3.12.7
-Pygame 2.6.1
 Windows 10
 ```
 
-The reinforcement-learning algorithms use only the Python standard library and were implemented without external RL libraries.
+Required Python packages are listed in `requirements.txt`:
+
+```text
+pygame==2.6.1
+matplotlib==3.9.2
+python-docx==1.2.0
+```
+
+The reinforcement-learning algorithms are implemented from scratch and do not use external reinforcement-learning libraries.
+
+`pygame` is used for the graphical interface, `matplotlib` is used for experimental figures, and `python-docx` is included for document-related project utilities.
 
 ---
 
 ## 6. Installation
 
-Open a terminal in the project root directory.
-
-Install the required package:
+Open a terminal in the project root directory and run:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Verify the Pygame installation:
+Verify Pygame with:
 
 ```bash
 python -c "import pygame; print(pygame.version.ver)"
@@ -272,110 +271,61 @@ python -c "import pygame; print(pygame.version.ver)"
 
 ## 7. Running the Project
 
-### Show the project configuration
+Show the project configuration:
 
 ```bash
 python main.py
 ```
 
-Expected configuration:
-
-```text
-Student ID: 40403384
-Base seed: 8
-Maze size: 15
-```
-
-### Generate the source maze
+Generate the source maze:
 
 ```bash
 python environments/generator.py
 ```
 
-The generated map is saved at:
-
-```text
-environments/maps/source_map.json
-```
-
-### Run Value Iteration
-
-```bash
-python agents/value_iteration.py
-```
-
-Run the gamma comparison:
+Run Value Iteration experiments:
 
 ```bash
 python experiments/run_value_iteration.py
+python experiments/evaluate_value_iteration.py
 ```
 
-### Run Q-Learning
-
-```bash
-python agents/q_learning.py
-```
-
-Compare linear and exponential epsilon schedules:
+Run Q-Learning experiments:
 
 ```bash
 python experiments/run_q_learning.py
 ```
 
-### Run SARSA(λ)
-
-```bash
-python agents/sarsa_lambda.py
-```
-
-Compare all required λ values:
+Run SARSA(lambda) experiments:
 
 ```bash
 python experiments/run_sarsa_lambda.py
 ```
 
-### Generate transfer-learning maps
+Run sparse-vs-shaped reward comparison experiments:
+
+```bash
+python experiments/run_reward_comparison.py
+```
+
+Generate transfer-learning maps and run transfer experiments:
 
 ```bash
 python transfer/transfer_learning.py
-```
-
-### Run transfer-learning experiments
-
-```bash
 python experiments/run_transfer_learning.py
 ```
 
-This experiment runs all transfer scenarios on both destination maps.
-
----
-
-## 8. Graphical Interface
-
-Run the Pygame interface with:
+Run the Pygame interface:
 
 ```bash
 python gui/maze_gui.py
 ```
 
-The interface supports:
+---
 
-- Source, similar, and different maps
-- Multiple learned policies
-- Start and pause
-- Single-step execution
-- Episode reset
-- Model selection
-- Map selection
-- Animation speed control
-- Agent trail visualization
-- Current state
-- Step count
-- Episode reward
-- Key status
-- Gate status
-- Intended and actual actions
-- Final success or failure status
+## 8. Graphical Interface
+
+The Pygame interface supports source, similar, and different maps; multiple learned policies; start/pause; single-step execution; reset; model and map selection; animation-speed control; agent-trail visualization; current state; reward; key and gate status; intended and actual actions; and final success/failure status.
 
 ### Keyboard controls
 
@@ -400,42 +350,54 @@ Run all unit tests from the project root:
 python -m unittest discover -s tests -v
 ```
 
-Current test result:
+Current result:
 
 ```text
 Ran 29 tests
 OK
 ```
 
-The tests cover:
-
-- Environment reset and state representation
-- Stochastic transition probabilities
-- Wall collisions
-- Key collection
-- Locked door behavior
-- Periodic gate behavior
-- Value Iteration convergence
-- Q-Learning updates and epsilon schedules
-- SARSA eligibility traces
-- Transfer-map generation
-- BFS map validation
-- Full, scaled, selective, and scratch transfer
+The tests cover environment behavior, transition probabilities, Value Iteration convergence, Q-Learning updates and epsilon schedules, SARSA eligibility traces, transfer-map generation and validation, and transfer strategies.
 
 ---
 
 ## 10. Reproducing the Results
 
-To reproduce all main results, run these commands in order:
+All main experiment settings and hyperparameters are documented in:
+
+```text
+configs/experiment_config.json
+```
+
+To reproduce the main experimental results:
 
 ```bash
 python -m pip install -r requirements.txt
 python environments/generator.py
 python experiments/run_value_iteration.py
+python experiments/evaluate_value_iteration.py
 python experiments/run_q_learning.py
 python experiments/run_sarsa_lambda.py
+python experiments/run_reward_comparison.py
 python transfer/transfer_learning.py
 python experiments/run_transfer_learning.py
+```
+
+To regenerate figures and additional analysis outputs:
+
+```bash
+python analysis/generate_figures.py
+python analysis/generate_value_iteration_convergence.py
+python analysis/generate_q_learning_curve.py
+python analysis/generate_sarsa_lambda_curves.py
+python analysis/generate_reward_comparison_figures.py
+python analysis/generate_transfer_q_change.py
+python analysis/measure_algorithm_memory.py
+```
+
+To run the complete test suite:
+
+```bash
 python -m unittest discover -s tests -v
 ```
 
@@ -444,65 +406,66 @@ Generated outputs are stored under:
 ```text
 results/raw_data/
 results/models/
+results/figures/
 ```
 
-Raw experiment data are stored as CSV and JSON files so that the results can be inspected and reproduced.
-
-All paths are calculated relative to the project directory and do not depend on a specific computer username or absolute local path.
+All project paths are calculated relative to the repository root and do not depend on a specific local username or absolute directory.
 
 ---
 
-## 11. Reproducibility
+## 11. Reproducibility and Saved Data
 
-The project uses deterministic seeds for:
+The project uses deterministic seeds for map generation, environment transitions, agent exploration, evaluation episodes, and transfer-map generation.
 
-- Map generation
-- Environment transitions
-- Agent exploration
-- Evaluation episodes
-- Transfer-map generation
-
-The base seed is derived from the penultimate digit of the student ID:
+The base seed is:
 
 ```text
-Base seed = 8
+8
 ```
 
-Every algorithm uses the saved source map to ensure that comparisons are performed under the same environment.
+Raw numerical results are stored in `results/raw_data/`, learned models and policies in `results/models/`, and generated figures in `results/figures/`.
+
+Q-Learning training-state visitation counts are saved separately and are used to generate the training visitation heatmap.
+
+The reward-shaping behavior analysis checks for undesirable effects such as long loops, reward farming, excessive hazard avoidance, and timeouts in the final training episodes.
+
+Peak Python-tracked memory usage is measured with `tracemalloc` in a separate sparse-reward comparison run. These values represent peak Python-managed allocations, not total operating-system process RAM.
+
+The memory comparison output is stored in:
+
+```text
+results/raw_data/algorithm_memory_comparison.csv
+```
 
 ---
 
 ## 12. Main Experimental Findings
 
-- Value Iteration with `γ = 0.95` is used as the main reference policy.
-- Linear epsilon decay performs better than exponential decay for Q-Learning.
-- SARSA with `λ = 0.3` provides the best overall balance in the tested settings.
-- Transfer learning substantially improves performance on the similar destination map.
-- Full or scaled transfer can produce negative transfer when the destination structure changes significantly.
-- Selective transfer reduces the risk of copying knowledge from changed local regions.
-- Reward shaping accelerates learning, but its effect must be evaluated together with policy quality and path length.
+- Value Iteration with `gamma = 0.95` achieved a `100%` evaluation success rate, an average reward of `65.74`, and an average path length of `47.60` steps.
+- For Q-Learning, the linear epsilon schedule achieved a `100%` evaluation success rate with an average reward of `9.70` and an average path length of `78.67` steps.
+- The exponential epsilon schedule also achieved a `100%` evaluation success rate, but with a lower average reward of `-32.54` and a longer average path length of `83.65` steps.
+- Among the tested SARSA(lambda) settings, `lambda = 0.3` achieved a `100%` evaluation success rate with an average reward of `56.02` and an average path length of `49.84` steps.
+- Reward shaping showed no evidence of persistent reward farming or long-loop behavior in the final training episodes. In the behavior-check output, `high_reward_long_count = 0`.
+- Training-state visitation counts are collected directly during Q-Learning training and are used for the visitation heatmap.
+- Transfer learning substantially improves performance on the similar target environment.
+- Negative transfer can occur when source knowledge is transferred to a locally changed target region.
+- At state `(3, 11, 0, 0)`, the transferred greedy action was initially `UP`, while the target environment favored `RIGHT`; after further target training, the greedy action was corrected to `RIGHT`.
+- Selective transfer reduces the risk of copying inappropriate Q-values from structurally changed local regions.
+- Peak Python-tracked memory measured with `tracemalloc` was approximately `0.1348 MB` for Value Iteration, `0.7397 MB` for Q-Learning, and `0.7132 MB` for SARSA(lambda=0.3).
+- All 29 unit tests pass after the final implementation changes.
 
 ---
 
 ## 13. Use of AI Assistance
 
-An AI assistant was used as a development aid for:
+An AI assistant was used as a development aid for code-structure suggestions, debugging support, test-case suggestions, and documentation drafting. All suggestions were reviewed, modified, executed, and validated by the student.
 
-- Initial code structure suggestions
-- Debugging support
-- Test-case suggestions
-- Documentation drafting
+| Use | AI suggestion | Student change | Reason |
+|---|---|---|---|
+| Similar-map generation | Move approximately 18% of interior walls using ceiling | Replaced ceiling with rounding, producing two moved walls (`14.29%`) | Three of fourteen walls would be `21.43%`, outside the intended range |
+| Different-map generation | Move the key to a random valid position | Added a minimum key-to-goal distance and BFS validation before accepting the map | The initial random suggestion placed the key only one step from the goal and made the task too easy |
 
-All generated suggestions were reviewed, modified, executed, and validated by the student.
-
-Examples of suggestions that required correction:
-
-| Initial suggestion | Problem | Student correction |
-|---|---|---|
-| Move approximately 18% of similar-map walls using ceiling | Three of fourteen walls produced `21.43%`, outside the preferred range | Replaced ceiling with rounding, producing the closest feasible value of `14.29%` |
-| Randomly move the key in the different map | The generated key was only one step from the goal, making the task too easy | Added a minimum key-to-goal distance constraint and regenerated the map |
-
-The final implementation was validated using reproducible experiments and 29 unit tests.
+The final implementation was validated with reproducible experiments and 29 unit tests.
 
 ---
 
@@ -510,9 +473,7 @@ The final implementation was validated using reproducible experiments and 29 uni
 
 Public GitHub repository:
 
-```text
 https://github.com/mina2collab/RL_FinalProject_40403384
-```
 
 ---
 
