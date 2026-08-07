@@ -1,2 +1,0 @@
-algorithm,gamma,theta,reward_mode,evaluation_episodes,base_seed,seed_offset,success_rate,average_reward,average_steps
-Value Iteration,0.95,1e-08,sparse,100,8,10000,100.0,65.74,47.6
