@@ -1,0 +1,185 @@
+{
+  "student_id": "40403384",
+  "source_map": "environments\\maps\\source_map.json",
+  "source_model": "results\\models\\q_learning_linear.json",
+  "target_maps": {
+    "similar": "environments\\maps\\target_similar.json",
+    "different": "environments\\maps\\target_different.json"
+  },
+  "transfer_scenarios": [
+    {
+      "mode": "scratch",
+      "beta": 0.0,
+      "transferred_states": 0,
+      "total_target_states": 564,
+      "transfer_percentage": 0.0,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 0,
+      "target": "similar"
+    },
+    {
+      "mode": "full",
+      "beta": 1.0,
+      "transferred_states": 548,
+      "total_target_states": 564,
+      "transfer_percentage": 97.16312056737588,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 16,
+      "target": "similar"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.25,
+      "transferred_states": 548,
+      "total_target_states": 564,
+      "transfer_percentage": 97.16312056737588,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 16,
+      "target": "similar"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.5,
+      "transferred_states": 548,
+      "total_target_states": 564,
+      "transfer_percentage": 97.16312056737588,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 16,
+      "target": "similar"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.75,
+      "transferred_states": 548,
+      "total_target_states": 564,
+      "transfer_percentage": 97.16312056737588,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 16,
+      "target": "similar"
+    },
+    {
+      "mode": "selective",
+      "beta": 1.0,
+      "transferred_states": 376,
+      "total_target_states": 564,
+      "transfer_percentage": 66.66666666666667,
+      "skipped_changed_neighborhoods": 172,
+      "skipped_missing_states": 16,
+      "target": "similar"
+    },
+    {
+      "mode": "scratch",
+      "beta": 0.0,
+      "transferred_states": 0,
+      "total_target_states": 564,
+      "transfer_percentage": 0.0,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 0,
+      "target": "different"
+    },
+    {
+      "mode": "full",
+      "beta": 1.0,
+      "transferred_states": 520,
+      "total_target_states": 564,
+      "transfer_percentage": 92.19858156028369,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 44,
+      "target": "different"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.25,
+      "transferred_states": 520,
+      "total_target_states": 564,
+      "transfer_percentage": 92.19858156028369,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 44,
+      "target": "different"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.5,
+      "transferred_states": 520,
+      "total_target_states": 564,
+      "transfer_percentage": 92.19858156028369,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 44,
+      "target": "different"
+    },
+    {
+      "mode": "scaled",
+      "beta": 0.75,
+      "transferred_states": 520,
+      "total_target_states": 564,
+      "transfer_percentage": 92.19858156028369,
+      "skipped_changed_neighborhoods": 0,
+      "skipped_missing_states": 44,
+      "target": "different"
+    },
+    {
+      "mode": "selective",
+      "beta": 1.0,
+      "transferred_states": 180,
+      "total_target_states": 564,
+      "transfer_percentage": 31.914893617021278,
+      "skipped_changed_neighborhoods": 340,
+      "skipped_missing_states": 44,
+      "target": "different"
+    }
+  ],
+  "negative_transfer_candidates": {
+    "similar": {
+      "state": [
+        3,
+        11,
+        0,
+        0
+      ],
+      "source_q_values": [
+        1.5617060685986706,
+        -1.1900619861646031,
+        1.1225669268688048,
+        1.0856800794479746
+      ],
+      "source_greedy_action": 0,
+      "source_greedy_action_name": "UP",
+      "target_best_immediate_action": 3,
+      "target_best_immediate_action_name": "RIGHT",
+      "target_expected_rewards": {
+        "UP": 0.469,
+        "DOWN": 0.469,
+        "LEFT": -1.46,
+        "RIGHT": 13.972
+      },
+      "immediate_reward_gap": 13.503,
+      "local_neighborhood_changed": true
+    },
+    "different": {
+      "state": [
+        12,
+        5,
+        0,
+        0
+      ],
+      "source_q_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_greedy_action": 0,
+      "source_greedy_action_name": "UP",
+      "target_best_immediate_action": 1,
+      "target_best_immediate_action_name": "DOWN",
+      "target_expected_rewards": {
+        "UP": -1.841,
+        "DOWN": 14.046999999999999,
+        "LEFT": -2.5220000000000002,
+        "RIGHT": 0.5259999999999999
+      },
+      "immediate_reward_gap": 15.887999999999998,
+      "local_neighborhood_changed": true
+    }
+  }
+}

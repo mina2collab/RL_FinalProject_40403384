@@ -1,0 +1,13 @@
+algorithm,reward_mode,seed,window_episodes,success_rate_pct,mean_steps,mean_wall_collisions,mean_penalty_visits,mean_closed_door_attempts,timeout_rate_pct,long_success_count_ge_150,high_reward_long_count,reward_steps_correlation
+q_learning,shaped,18,100,100.0,59.54,2.91,0.34,0,0.0,0,0,-0.8944002156374681
+q_learning,shaped,28,100,100.0,65.13,3.11,0.36,0.01,0.0,1,0,-0.9406602725066515
+q_learning,shaped,8,100,100.0,66.5,3.54,0.41,0.01,0.0,1,0,-0.9533741697025314
+q_learning,sparse,18,100,100.0,64.05,2.69,0.29,0,0.0,1,0,-0.8789692966164656
+q_learning,sparse,28,100,100.0,66.59,2.75,0.52,0,0.0,5,0,-0.9594802730001927
+q_learning,sparse,8,100,100.0,67.09,2.53,0.38,0,0.0,1,0,-0.9535941413233078
+sarsa_lambda_0_3,shaped,18,100,100.0,54.67,1.93,0.4,0,0.0,0,0,-0.8940497556754416
+sarsa_lambda_0_3,shaped,28,100,100.0,57.04,1.97,0.28,0,0.0,1,0,-0.9542584838012987
+sarsa_lambda_0_3,shaped,8,100,100.0,53.5,2.15,0.19,0,0.0,0,0,-0.9069424416560284
+sarsa_lambda_0_3,sparse,18,100,100.0,58.46,2.26,0.26,0,0.0,1,0,-0.9752362140719806
+sarsa_lambda_0_3,sparse,28,100,100.0,61.05,2.26,0.23,0.01,0.0,1,0,-0.9570523952216947
+sarsa_lambda_0_3,sparse,8,100,100.0,59.81,2.64,0.29,0,0.0,1,0,-0.9418553003594797

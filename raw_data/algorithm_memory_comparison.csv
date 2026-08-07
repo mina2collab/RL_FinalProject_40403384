@@ -1,0 +1,4 @@
+algorithm,states,value_entries,policy_entries,q_entries,lambda,current_memory_kb,peak_memory_kb,peak_memory_mb
+Value Iteration,564,564,564,0,,47.2490234375,138.021484375,0.13478660583496094
+Q-Learning,564,0,0,2256,,141.9599609375,757.474609375,0.7397212982177734
+SARSA(lambda=0.3),564,0,0,2256,0.3,122.2802734375,730.294921875,0.7131786346435547
