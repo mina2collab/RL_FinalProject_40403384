@@ -8,7 +8,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any
-
+from collections import defaultdict
 import matplotlib.pyplot as plt
 
 
@@ -44,6 +44,19 @@ Q_MODEL = (
     / "q_learning_linear.json"
 )
 
+Q_SPARSE_MODEL = (
+    ROOT
+    / "results"
+    / "models"
+    / "reward_comparison_q_learning_sparse_seed_8.json"
+)
+
+SARSA_SPARSE_MODEL = (
+    ROOT
+    / "results"
+    / "models"
+    / "reward_comparison_sarsa_lambda_0_3_sparse_seed_8.json"
+)
 TRANSFER_CSV = (
     ROOT
     / "results"
@@ -618,14 +631,37 @@ def simulate_visitation(
 def generate_visitation_heatmap(
     policy: dict,
 ) -> Path:
-    """Generate a Q-Learning visitation heatmap."""
+    """Generate a Q-Learning training visitation heatmap."""
 
-    environment, visits = (
-        simulate_visitation(
-            policy,
-            episodes=200,
-        )
+    del policy  # kept only for compatibility with existing calls
+
+    environment = MazeEnv(
+        transition_seed=8,
+        reward_mode="shaped",
+        gamma=0.95,
     )
+
+    input_path = (
+        FIGURES_DIR.parent
+        / "raw_data"
+        / "q_learning_linear_training_state_visits.csv"
+    )
+
+    visits = defaultdict(int)
+
+    with input_path.open(
+        "r",
+        encoding="utf-8",
+        newline="",
+    ) as file:
+        reader = csv.DictReader(file)
+
+        for record in reader:
+            row = int(record["row"])
+            column = int(record["column"])
+            visit_count = int(record["visit_count"])
+
+            visits[(row, column)] += visit_count
 
     matrix = []
 
@@ -645,12 +681,13 @@ def generate_visitation_heatmap(
                 )
             else:
                 matrix_row.append(
-                    visits[
+                    visits.get(
                         (
                             row,
                             column,
-                        )
-                    ]
+                        ),
+                        0,
+                    )
                 )
 
         matrix.append(matrix_row)
@@ -666,7 +703,7 @@ def generate_visitation_heatmap(
         environment,
         (
             "Q-Learning State Visitation Heatmap\n"
-            "200 greedy evaluation episodes"
+            "training visits across 600 episodes"
         ),
     )
 
@@ -703,6 +740,8 @@ def generate_policy_difference(
     environment: MazeEnv,
     value_policy: dict,
     q_policy: dict,
+    comparison_name: str = "Q-Learning",
+    output_filename: str = "policy_difference.png",
 ) -> Path:
     """Compare Value Iteration and Q-Learning."""
 
@@ -790,7 +829,7 @@ def generate_policy_difference(
         axis,
         environment,
         (
-            "Policy Difference: Value Iteration vs Q-Learning\n"
+            f"Policy Difference: Value Iteration vs {comparison_name}\n"
             f"Agreement = {agreement:.2f}%"
         ),
     )
@@ -834,7 +873,7 @@ def generate_policy_difference(
 
     output_path = (
         FIGURES_DIR
-        / "policy_difference.png"
+        / output_filename
     )
 
     figure.tight_layout()
@@ -1093,6 +1132,16 @@ def main() -> None:
         q_policy,
     ) = load_model(Q_MODEL)
 
+    (
+        _,
+        q_sparse_policy,
+    ) = load_model(Q_SPARSE_MODEL)
+
+    (
+        _,
+        sarsa_sparse_policy,
+    ) = load_model(SARSA_SPARSE_MODEL)
+    
     generated_files = []
 
     generated_files.append(
@@ -1116,12 +1165,25 @@ def main() -> None:
     )
 
     generated_files.append(
-        generate_policy_difference(
-            environment,
-            value_policy,
-            q_policy,
+    generate_policy_difference(
+        environment,
+        value_policy,
+        q_sparse_policy,
+        comparison_name="Q-Learning (Sparse)",
+        output_filename="policy_difference_q_sparse.png",
         )
     )
+
+    generated_files.append(
+    generate_policy_difference(
+        environment,
+        value_policy,
+        sarsa_sparse_policy,
+        comparison_name="SARSA(lambda=0.3, Sparse)",
+        output_filename="policy_difference_sarsa_sparse.png",
+        )
+    )
+
 
     transfer_figure = (
         generate_transfer_figure()
