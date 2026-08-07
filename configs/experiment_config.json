@@ -1,0 +1,156 @@
+{
+  "project": {
+    "student_id": "40403384",
+    "base_seed": 8,
+    "environment": "Dynamic 15x15 Maze"
+  },
+
+  "environment": {
+    "rows": 15,
+    "columns": 15,
+    "total_cells": 225,
+    "wall_cells": 84,
+    "passable_cells": 141,
+    "state_representation": [
+      "row",
+      "column",
+      "has_key",
+      "gate_phase"
+    ],
+    "number_of_states": 564,
+    "number_of_actions": 4,
+    "actions": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "max_episode_steps": 423,
+    "gate_period": 2,
+    "gate_open_phase": 0
+  },
+
+  "transition_model": {
+    "intended_action_probability": 0.8,
+    "perpendicular_action_probability": 0.1,
+    "stochastic": true
+  },
+
+  "sparse_rewards": {
+    "normal_move": -1,
+    "wall_or_out_of_bounds": -5,
+    "closed_door_without_key": -8,
+    "closed_periodic_gate": -4,
+    "penalty_cell": -10,
+    "key": 20,
+    "goal": 100,
+    "timeout_additional_penalty": -20
+  },
+
+  "reward_shaping": {
+    "enabled_mode": "shaped",
+    "coefficient": 0.2,
+    "formula": "F(s,s') = 0.20 * (gamma * Phi(s') - Phi(s))",
+    "potential_before_key": "negative Manhattan distance to key",
+    "potential_after_key": "negative Manhattan distance to goal"
+  },
+
+  "value_iteration": {
+    "gammas": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "theta": 1e-8,
+    "max_iterations": 10000,
+    "evaluation_episodes": 100,
+    "primary_gamma": 0.95,
+    "reward_mode": "sparse"
+  },
+
+  "q_learning": {
+    "episodes": 600,
+    "evaluation_episodes": 100,
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 500,
+    "epsilon_schedules": [
+      "linear",
+      "exponential"
+    ],
+    "primary_schedule": "linear",
+    "training_seed": 8
+  },
+
+  "sarsa_lambda": {
+    "episodes": 600,
+    "evaluation_episodes": 100,
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 500,
+    "lambda_values": [
+      0.0,
+      0.3,
+      0.7,
+      0.9
+    ],
+    "primary_lambda": 0.3,
+    "training_seed": 8
+  },
+
+  "multi_seed_comparison": {
+    "seeds": [
+      8,
+      18,
+      28
+    ],
+    "reward_modes": [
+      "sparse",
+      "shaped"
+    ],
+    "algorithms": [
+      "q_learning",
+      "sarsa_lambda_0.3"
+    ]
+  },
+
+  "transfer_learning": {
+    "source_seed": 8,
+    "target_types": [
+      "similar",
+      "different"
+    ],
+    "strategies": [
+      "scratch",
+      "full",
+      "selective",
+      "scaled_0.25",
+      "scaled_0.50",
+      "scaled_0.75"
+    ],
+    "negative_transfer_analysis": true
+  },
+
+  "memory_measurement": {
+    "method": "Python tracemalloc",
+    "reward_mode": "sparse",
+    "seed": 8,
+    "gamma": 0.95,
+    "q_learning_episodes": 600,
+    "sarsa_lambda_episodes": 600,
+    "sarsa_lambda": 0.3,
+    "value_iteration_theta": 1e-8,
+    "output_file": "results/raw_data/algorithm_memory_comparison.csv"
+  },
+
+  "outputs": {
+    "raw_data_directory": "results/raw_data",
+    "figures_directory": "results/figures",
+    "models_directory": "results/models",
+    "config_file": "configs/experiment_config.json"
+  }
+}
