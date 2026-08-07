@@ -247,7 +247,8 @@ class QLearningAgent:
 
         self.training_history = []
         self.first_update_record = None
-
+        self.training_state_visits = {}
+        
         for episode in range(episodes):
             epsilon = self.epsilon_for_episode(
                 episode
@@ -256,11 +257,19 @@ class QLearningAgent:
             state, _ = self.environment.reset(
                 seed=self.seed + episode
             )
-
+            self.training_state_visits[state] = (
+                self.training_state_visits.get(state, 0) + 1
+            )
             episode_reward = 0.0
             wall_collisions = 0
             penalty_visits = 0
             closed_door_attempts = 0
+            normal_moves = 0
+            door_passes = 0
+            periodic_gate_closed = 0
+            periodic_gate_passes = 0
+            goal_reached_count = 0
+            step_limit_reached_count = 0
             key_collected = False
             success = False
 
@@ -304,6 +313,30 @@ class QLearningAgent:
                     "closed_door_attempt"
                 )
 
+                normal_moves += events.count(
+                    "normal_move"
+                )
+
+                door_passes += events.count(
+                    "door_passed"
+                )
+
+                periodic_gate_closed += events.count(
+                    "periodic_gate_closed"
+                )
+
+                periodic_gate_passes += events.count(
+                    "periodic_gate_passed"
+                )
+
+                goal_reached_count += events.count(
+                    "goal_reached"
+                )
+
+                step_limit_reached_count += events.count(
+                    "step_limit_reached"
+                )
+
                 if "key_collected" in events:
                     key_collected = True
 
@@ -311,6 +344,11 @@ class QLearningAgent:
                     success = True
 
                 episode_reward += reward
+
+                self.training_state_visits[next_state] = (
+                    self.training_state_visits.get(next_state, 0) + 1
+                )
+
                 state = next_state
 
             episode_record = {
@@ -319,11 +357,21 @@ class QLearningAgent:
                 "reward": episode_reward,
                 "steps": self.environment.step_count,
                 "success": int(success),
+                "normal_moves": normal_moves,
                 "wall_collisions": wall_collisions,
                 "penalty_visits": penalty_visits,
                 "closed_door_attempts":
                     closed_door_attempts,
+                "door_passes": door_passes,
+                "periodic_gate_closed":
+                    periodic_gate_closed,
+                "periodic_gate_passes":
+                    periodic_gate_passes,
                 "key_collected": int(key_collected),
+                "goal_reached_count":
+                    goal_reached_count,
+                "step_limit_reached_count":
+                    step_limit_reached_count,
                 "terminated": int(terminated),
                 "truncated": int(truncated),
             }

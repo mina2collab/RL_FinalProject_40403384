@@ -101,6 +101,13 @@ def run_schedule(
         / f"q_learning_{schedule}_training.csv"
     )
 
+    visitation_path = (
+        PROJECT_ROOT
+        / "results"
+        / "raw_data"
+        / f"q_learning_{schedule}_training_state_visits.csv"
+    )
+    
     model_path = (
         PROJECT_ROOT
         / "results"
@@ -119,9 +126,41 @@ def run_schedule(
         history_path
     )
 
-    agent.save_model(
-        model_path
-    )
+    with visitation_path.open(
+        "w",
+        encoding="utf-8",
+        newline="",
+    ) as file:
+        writer = csv.writer(file)
+
+        writer.writerow(
+            [
+                "row",
+                "column",
+                "has_key",
+                "gate_phase",
+                "visit_count",
+            ]
+        )
+
+        for state, visit_count in sorted(
+            agent.training_state_visits.items()
+        ):
+            row, column, has_key, gate_phase = state
+
+            writer.writerow(
+                [
+                    row,
+                    column,
+                    int(has_key),
+                    gate_phase,
+                    visit_count,
+                ]
+            )
+
+        agent.save_model(
+            model_path
+        )
 
     agent.save_update_example(
         update_path
